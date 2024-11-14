@@ -25,7 +25,7 @@ export const SectionSuggestTopicPopular = () => {
     <div className="flex w-full flex-col items-center gap-20 py-10 sm:px-8">
       {suggestTopicPopular.data.map(suggest => (
         <div key={suggest.room_id} className="flex w-full max-w-screen-lg">
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-5">
             <SectionCard label="#แนะนำ จากห้อง" title={suggest.room_name_th} />
             {suggest.topics.map(topic => (
               <TopicCard
