@@ -1,3 +1,16 @@
+# 1.0.0 (2024-11-14)
+
+
+### Features
+
+* announce ([d7471e9](https://github.com/Inregist/pantip-x-bnb/commit/d7471e927b8c5d2550b3d92d0e4f1df08b590477))
+* api basic setup ([323d9cc](https://github.com/Inregist/pantip-x-bnb/commit/323d9cc97cd7d7b31dbd1e04048eb578e26a0d9d))
+* home with nav ([4a17461](https://github.com/Inregist/pantip-x-bnb/commit/4a17461b09e9f0330d603d5b57593f3dd27453cd))
+* navbar components ([d8dcf45](https://github.com/Inregist/pantip-x-bnb/commit/d8dcf45c4f67f862d2b53a79284099e551eab6be))
+* roomlist & refactor ([c2dc574](https://github.com/Inregist/pantip-x-bnb/commit/c2dc5748884506c979f4c8027e6e866bafca8ce9))
+* suggest topic ([a27081c](https://github.com/Inregist/pantip-x-bnb/commit/a27081c54e1bcbc704a7537ffe675a5a48bb2857))
+* suggest topic popular ([5ba0d54](https://github.com/Inregist/pantip-x-bnb/commit/5ba0d54a585cf8b251e524ad3412260627628ec0))
+
 ## [3.58.2](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.58.1...v3.58.2) (2024-10-17)
 
 
