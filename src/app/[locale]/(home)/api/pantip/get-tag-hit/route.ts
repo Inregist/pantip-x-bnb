@@ -1,17 +1,6 @@
-import { type NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-export type Tag = {
-  name: string;
-  slug: string;
-  pageview: number;
-  topic_count: number;
-  follow_count: number;
-};
-
-export const GET = async (request: NextRequest) => {
-  const sLimit = (request.nextUrl.searchParams.get('limit'));
-  const limit = sLimit ? Number.parseInt(sLimit) : 10;
-
+export const GET = async () => {
   return NextResponse.json({
     success: true,
     data: [
@@ -85,6 +74,6 @@ export const GET = async (request: NextRequest) => {
         topic_count: 13428,
         follow_count: 1805,
       },
-    ].slice(0, limit),
+    ],
   });
 };

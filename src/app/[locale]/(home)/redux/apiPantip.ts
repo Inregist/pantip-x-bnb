@@ -2,21 +2,21 @@
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import type { Tag } from '@/app/[locale]/(home)/api/pantip/get-tag-hit/route';
-
 import type { BasePantipResponse } from './types/base-pantip-response';
-
-export type { Tag };
+import type { SuggestTopicBehavior } from './types/suggest-topic-behavior';
+import type { Tag } from './types/tag';
 
 export const apiSlice = createApi({
   reducerPath: 'pantip',
   baseQuery: fetchBaseQuery({ baseUrl: '/api/pantip' }),
   endpoints: builder => ({
-
-    getTagHit: builder.query<BasePantipResponse<Tag[]>, number | undefined>({
-      query: limit => `/get-tag-hit?limit=${limit}`,
+    getTagHit: builder.query<BasePantipResponse<Tag[]>, void>({
+      query: () => `/get-tag-hit`,
+    }),
+    getSuggestTopicBehavior: builder.query<BasePantipResponse<SuggestTopicBehavior[]>, void>({
+      query: () => `/get-suggest-topic-behavior`,
     }),
   }),
 });
 
-export const { useGetTagHitQuery } = apiSlice;
+export const { useGetTagHitQuery, useGetSuggestTopicBehaviorQuery } = apiSlice;
