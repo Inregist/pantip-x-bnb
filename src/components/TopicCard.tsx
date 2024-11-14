@@ -31,7 +31,7 @@ export const TopicCard = ({
   voteCount,
 }: TopicCardProps) => {
   return (
-    <Link href={`https://pantip.com/topic/${id}`} className="flex">
+    <Link href={`https://pantip.com/topic/${id}`} target="_blank" className="flex">
       <div className={twMerge('min-w-40 max-w-80 rounded-lg bg-pantip-600 shadow-md flex flex-col transition-transform duration-300 ease-in-out hover:scale-105', image ? 'row-span-2' : 'row-span-1')}>
         {image && (
           <div className="flex justify-center overflow-hidden bg-gray-200/70">
