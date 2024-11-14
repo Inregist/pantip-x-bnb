@@ -4,6 +4,7 @@ import { Navbar } from '@/components/Navbar';
 
 import { RoomList } from './components/RoomList';
 import { SectionSuggestTopicBehavior } from './components/SectionSuggestTopicBehavior';
+import { SectionSuggestTopicPopular } from './components/SectionSuggestTopicPopular';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Navbar />
       <RoomList />
       <SectionSuggestTopicBehavior />
+      <SectionSuggestTopicPopular />
     </>
   );
 };

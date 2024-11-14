@@ -20,7 +20,10 @@ export const apiSlice = createApi({
     getRoomRecommend: builder.query<BasePantipResponse<Room[]>, void>({
       query: () => `/get-room-recommend`,
     }),
+    getSuggestTopicPopular: builder.query<BasePantipResponse<SuggestTopicBehavior[]>, void>({
+      query: () => `/get-suggest-topic-popular`,
+    }),
   }),
 });
 
-export const { useGetTagHitQuery, useGetSuggestTopicBehaviorQuery, useGetRoomRecommendQuery } = apiSlice;
+export const { useGetTagHitQuery, useGetSuggestTopicBehaviorQuery, useGetRoomRecommendQuery, useGetSuggestTopicPopularQuery } = apiSlice;

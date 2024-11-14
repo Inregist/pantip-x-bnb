@@ -1,12 +1,12 @@
 import { SectionCard } from '@/components/SectionCard';
 import { TopicCard } from '@/components/TopicCard';
 
-import { useGetSuggestTopicBehaviorQuery } from '../redux/apiPantip';
+import { useGetSuggestTopicPopularQuery } from '../redux/apiPantip';
 
-export const SectionSuggestTopicBehavior = () => {
-  const { data: suggestTopicBehavior, isLoading } = useGetSuggestTopicBehaviorQuery();
+export const SectionSuggestTopicPopular = () => {
+  const { data: suggestTopicPopular, isLoading } = useGetSuggestTopicPopularQuery();
 
-  if (!suggestTopicBehavior || isLoading) {
+  if (!suggestTopicPopular || isLoading) {
     return (
       <div className="flex w-full flex-col items-center gap-20 py-10 sm:px-8">
         <div className="flex w-full max-w-screen-lg animate-pulse">
@@ -23,7 +23,7 @@ export const SectionSuggestTopicBehavior = () => {
 
   return (
     <div className="flex w-full flex-col items-center gap-20 py-10 sm:px-8">
-      {suggestTopicBehavior.data.map(suggest => (
+      {suggestTopicPopular.data.map(suggest => (
         <div key={suggest.room_id} className="flex w-full max-w-screen-lg">
           <div className="flex flex-wrap justify-center gap-3">
             <SectionCard label="#แนะนำ จากห้อง" title={suggest.room_name_th} />
